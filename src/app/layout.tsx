@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Inter, Space_Grotesk } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,7 +36,9 @@ export default function RootLayout({
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
       >
         <SpeedInsights/>
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
