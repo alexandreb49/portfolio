@@ -36,22 +36,6 @@ function Background() {
               </div>
 
               <div className="text-right">
-                <div className="mb-1">
-                  <span
-                    className={`text-[10px] px-2 py-0.5 rounded-full font-medium ${
-                      item.type === 'education'
-                        ? 'bg-blue-100 text-blue-800'
-                        : item.type === 'internship'
-                        ? 'bg-green-100 text-green-800'
-                        : 'bg-purple-100 text-purple-800'
-                    }`}
-                  >
-                    {item.type === 'education' && <GraduationCap className="w-3 h-3 inline mr-1" />}
-                    {item.type === 'internship' && <Briefcase className="w-3 h-3 inline mr-1" />}
-                    {item.type === 'association' && <Users className="w-3 h-3 inline mr-1" />}
-                    {item.type.charAt(0).toUpperCase() + item.type.slice(1)}
-                  </span>
-                </div>
                 <span className="text-[11px] text-gray-500 font-medium">{item.time}</span>
               </div>
             </div>

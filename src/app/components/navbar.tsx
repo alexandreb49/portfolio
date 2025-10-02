@@ -106,7 +106,7 @@ export default function Navbar() {
             <Linkedin className="w-4 h-4" /> LinkedIn
           </a>
           <a
-            href="/Alexandre_Bernard_CV.pdf"
+            href="/documents/CV_EN_ALEXANDRE_BERNARD.pdf"
             className="inline-flex items-center gap-2 rounded-lg bg-white/20 text-white px-3 py-1.5 text-sm hover:bg-white/30 transition"
             onClick={() => setOpen(false)}
           >

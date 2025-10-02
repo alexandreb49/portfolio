@@ -4,7 +4,6 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-// import MyProjects from './projects/page'
 import {
   Mail, Phone, MapPin, Linkedin, Github, ArrowRight,
 } from 'lucide-react'
@@ -14,42 +13,12 @@ import Background from './components/main/background'
 
 export default function HomePage() {
 
-  const projects = [
-    {
-      title: 'Finite Element Software — Arts et Métiers',
-      time: '2025',
-      info: 'Static & vibratory analysis for beam structures • Team lead (4)',
-      logo: '/logos/ensam.png',
-      alt: 'Arts et Métiers',
-    },
-    {
-      title: 'CO₂ Cryogenic Assistance Study — Arts et Métiers',
-      time: '2025',
-      info: 'Tool wear evaluation • SEM chip analysis • Force measurement',
-      logo: '/logos/ensam.png',
-      alt: 'Arts et Métiers',
-    },
-    {
-      title: 'NASA Space Apps (French Interstellar)',
-      time: '2023',
-      info: 'IMF analysis tool • Machine learning • UI',
-      logo: '/logos/nasa.png',
-      alt: 'NASA',
-    },
-    {
-      title: 'Inductive Sensor Project — ESEO',
-      time: '2022-2023',
-      info: 'Vehicle detection by induction • Data processing software',
-      logo: '/logos/eseo.png',
-      alt: 'ESEO',
-    },
-  ]
 
   return (
     <main className="min-h-screen w-full text-black bg-white scroll-smooth">
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-sky-50 via-white to-indigo-50" />
-        <div className="relative max-w-6xl mx-auto px-6 pt-8 pb-6 md:pt-10 md:pb-8">
+        <div className="relative max-w-6xl mx-auto px-6 pt-2 pb-6 md:pt-10 md:pb-8">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-10 items-center">
             <div className="md:col-span-2 flex justify-center md:justify-start">
               <div className="relative">
@@ -73,8 +42,13 @@ export default function HomePage() {
                 Alexandre Bernard
               </h1>
 
-              <p className="text-gray-700 mt-2 md:mt-3 text-lg">
-                Hi ! I am an aerospace engineering student with strong mechanical engineering and computer science skills. I have always been passionate about science...
+              <p className="text-gray-700 mt-2 md:mt-3 text-lg text-justify">
+                Hi ! My name is Alexandre Bernard and i am pursuing a Master of Science in aerospace engineering at Arts et Métiers.
+                I have always been passionate about space and engineering. It led me to participate in space-themed hackatons where i worked on both mechanical and software engineering.
+                Having skills in both fields makes me a versatile engineer able to contribute in complex project from design to production.
+                As a team leader for various projects, i developed team building skills and project methodology for aeronautical projects. 
+                I gained hands on experience working as a consultant for Arts et Metier Junior Entreprise (AMJE) and i am now looking for a six month internship to 
+                complete my degree.
               </p>
 
               <div className="mt-4 flex flex-wrap items-center gap-3 text-sm">

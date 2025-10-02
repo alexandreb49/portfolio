@@ -1,0 +1,23 @@
+.project_card_space {
+  background-image: url("/space_app_challenge.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.project_card_parking {
+  background-image: url("/inductive_sensor.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.project_card_software {
+  background-image: url("/repas.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.project_card_bmg {
+  background-image: url("/bmg.png");
+  background-size: cover;
+  background-position: center;
+}
