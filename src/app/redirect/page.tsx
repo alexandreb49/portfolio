@@ -12,8 +12,7 @@ function RedirectPage() {
         <div className=''>
         <h1 className='text-2xl text-justify font-medium w-[60%] sm:w-[80%] mx-auto'>
             <span className='text-3xl text-blue-800 italic'>Hello ! </span> You have successfuly scanned the qr code on my cv. You're welcome to check both my linkedin and my portfolio, where i showcase my engineering projects.
-            For any inquiries, please use the contact informations available on the website. Thank you for taking the time to learn about my work and for your interest in 
-            my projects. 
+            For any inquiries, please use the contact informations available on the website. Thank you for taking the time to learn about my work and for your interest in my projects. 
         </h1>
         <span className='text-2xl mx-auto ml-[30%] italic'>Alexandre Bernard</span>
         </div>
