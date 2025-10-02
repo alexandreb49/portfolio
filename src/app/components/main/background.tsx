@@ -21,9 +21,9 @@ function Background() {
                   <Image
                     src={item.logo}
                     alt={item.alt || 'Logo'}
-                    width={40}
-                    height={40}
-                    className="rounded-full object-contain bg-white"
+                    width={60}
+                    height={60}
+                    className="object-contain bg-white"
                   />
                 ) : (
                   <div className="w-10 h-10 rounded-full bg-gray-100" />
