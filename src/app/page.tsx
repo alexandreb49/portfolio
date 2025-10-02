@@ -47,7 +47,7 @@ export default function HomePage() {
                 I have always been passionate about space and engineering. It led me to participate in space-themed hackatons where i worked on both mechanical and software engineering.
                 Having skills in both fields makes me a versatile engineer able to contribute in complex project from design to production.
                 As a team leader for various projects, i developed team building skills and project methodology for aeronautical projects. 
-                I gained hands on experience working as a consultant for Arts et Metier Junior Entreprise (AMJE) where i contributed to real-world projects.I am now looking for a six month internship to 
+                I gained hands on experience working as a consultant for Arts et Metier Junior Entreprise (AMJE) where i contributed to real-world projects. I am now looking for a six month internship to 
                 complete my degree.
               </p>
 
