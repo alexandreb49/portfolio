@@ -2,32 +2,27 @@
     {
       "title": "Arts et Métiers ParisTech — Master of Science in Aerospace Engineering",
       "time": "2023–2026",
-      "info": "Specialization in Advanced Manufacturing & Design • Expected graduation 2026",
+      "info": "Specialization in aerospace engineering",
       "logo": "/logos/ensam.png",
       "alt": "Arts et Métiers"
     },
     {
-      "title": "IT Manager — Arts et Métiers Student Association",
-      "time": "2024–2025",
-      "info": "Managing websites & databases • Network infrastructure for 300+ students • Process automation",
-      "logo": "/logos/ensam.png",
-      "alt": "Arts et Métiers",
-      "type": "association"
-    },
-    {
-      "title": "Workshop Operator Intern — APMA",
-      "time": "2024",
-      "info": "Machining, turning, deburring, sandblasting • Quality control processes",
-      "logo": "/logos/apma.png",
-      "alt": "APMA",
-      "type": "internship"
-    },
-    {
-      "title": "ESEO Engineering School — Foundation Years",
+      "title": "ESEO Engineering School — Undergraduate in engineering",
       "time": "2021–2023",
-      "info": "Preparatory program in Mathematics, Physics, and Engineering fundamentals",
+      "info": "Intensive classes in Mathematics, Physics, Engineering and Software engineering fundamentals",
       "logo": "/logos/eseo.png",
-      "alt": "ESEO",
-      "type": "education"
+      "alt": "ESEO"
+    },  
+    {
+      "title": "University of Angers — Technical degree in mechanical engineering",
+      "time": "2020–2021",
+      "info": " Production and Mechanical engineer fundamentals",
+      "logo": "/logos/univ-angers.png",
+      "alt": "Uni Angers"
     }
+
+
+
+
+
   ]

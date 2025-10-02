@@ -1,0 +1,17 @@
+[    {
+      "title": "IT Manager — Arts et Métiers Student Association",
+      "time": "2024–2025",
+      "info": "Managing websites & databases • Network infrastructure for 300+ students • Python scripts for process automation",
+      "logo": "/logos/ensam.png",
+      "alt": "Arts et Métiers"
+    }, 
+{
+      "title": "Hackaton NASA Space App Challenge 2023",
+      "time": "2023",
+      "info": "I Used DSCOVR and ACE data to build AI tools to study magnetic reconnection pattern in the interplanetary magnetic field ",
+      "logo": "/logos/nasa.png",
+      "alt": "Arts et Métiers"
+    }
+
+
+]

@@ -9,7 +9,7 @@ import {
 } from 'lucide-react'
 import SocialsLink, {ContactLink} from './components/links'
 import Skills from './components/main/skills'
-import Background from './components/main/background'
+import Background, { Extracurricular, Professional } from './components/main/background'
 
 export default function HomePage() {
 
@@ -87,22 +87,32 @@ export default function HomePage() {
             </div>
             <div className="flex flex-wrap gap-3 md:justify-end">
               <a
-                href="mailto:alexandre.bernard@ensam.eu?subject=Internship%20Opportunity"
+                href="mailto:alexandre.bernard@ensam.eu"
                 className="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-white text-blue-800 hover:bg-blue-50 transition"
               >
                 <Mail className="w-4 h-4" /> Contact me
               </a>
               <a
+                href="/documents/recommendation/recommendation_Alexandre_Bernard.pdf"
+                className="inline-flex items-center gap-2 px-5 py-2 rounded-xl border border-white/70 hover:bg-white/10 transition"
+              >
+                Recommendations <ArrowRight className="w-4 h-4" />
+              </a>
+                <a
                 href="/documents/cv/CV_EN_ALEXANDRE_BERNARD.pdf"
                 className="inline-flex items-center gap-2 px-5 py-2 rounded-xl border border-white/70 hover:bg-white/10 transition"
               >
                 Download CV <ArrowRight className="w-4 h-4" />
               </a>
+              
+
             </div>
           </div>
         </div>
       </section>
       <Background />
+      <Professional/>
+      <Extracurricular/>
       <Skills/>
 
 
