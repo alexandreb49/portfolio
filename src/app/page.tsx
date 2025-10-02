@@ -1,6 +1,3 @@
-// app/page.tsx
-'use client'
-
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -10,6 +7,7 @@ import {
 import SocialsLink, {ContactLink} from './components/links'
 import Skills from './components/main/skills'
 import Background, { Extracurricular, Professional } from './components/main/background'
+import MyProjects from './projects/page'
 
 export default function HomePage() {
 
@@ -118,11 +116,9 @@ export default function HomePage() {
 
       <section id="projects" className="bg-slate-50">
         <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
-          {/* <MyProjects /> */}
+           <MyProjects /> 
         </div>
       </section>
-
-
     </main>
   )
 }
