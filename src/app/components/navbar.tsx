@@ -1,3 +1,4 @@
+
 'use client'
 
 import React from 'react'
@@ -41,7 +42,7 @@ export default function Navbar() {
   const [open, setOpen] = React.useState(false)
 
   return (
-    <header>
+    <header className="relative">
       <nav className="w-full h-16 bg-gradient-to-r from-blue-600 to-blue-800 shadow-lg flex items-center justify-between px-8">
         <Link href="/" className="text-lg sm:text-xl font-bold tracking-tight text-white hover:text-blue-100">
            Alexandre Bernard
@@ -53,9 +54,8 @@ export default function Navbar() {
 
           <span className="h-6 w-px bg-white/30 mx-1" />
 
-          < SocialsLink text="Linkedin" link="https://www.linkedin.com/in/alexandre-bernard-chaillou/" imageLink={< Linkedin className='h-4 w-4'/>} type='dark'/>
-          < SocialsLink text="Github" link="https://github.com/alexandreb49" imageLink={< Github className='h-4 w-4'/>}  type='dark'/>
-
+          <SocialsLink text="Linkedin" link="https://www.linkedin.com/in/alexandre-bernard-chaillou/" imageLink={<Linkedin className='h-4 w-4'/>} type='dark'/>
+          <SocialsLink text="Github" link="https://github.com/alexandreb49" imageLink={<Github className='h-4 w-4'/>}  type='dark'/>
 
           <a
             href="/documents/CV_EN_ALEXANDRE_BERNARD.pdf"
@@ -75,45 +75,43 @@ export default function Navbar() {
         </button>
       </nav>
 
-      <div
-        className={`md:hidden origin-top transition-all ${
-          open ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 pointer-events-none'
-        } bg-blue-700/95 backdrop-blur`}
-      >
-        <div className="px-4 py-3 flex flex-col gap-3">
-          <NavLink href="/" onClick={() => setOpen(false)}>About Me</NavLink>
-          <NavLink href="/projects" onClick={() => setOpen(false)}>Projects</NavLink>
-          <NavLink href="/contact" onClick={() => setOpen(false)}>Contact</NavLink>
+      {/* Mobile menu - only renders when open */}
+      {open && (
+        <div className="md:hidden absolute top-full left-0 right-0 bg-blue-700/95 backdrop-blur shadow-lg z-50">
+          <div className="px-4 py-3 flex flex-col gap-3">
+            <NavLink href="/" onClick={() => setOpen(false)}>About Me</NavLink>
+            <NavLink href="/projects" onClick={() => setOpen(false)}>Projects</NavLink>
 
-          <div className="h-px bg-white/30 my-2" />
+            <div className="h-px bg-white/30 my-2" />
 
-          <a
-            href="https://github.com/alexandreb49"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-white hover:text-blue-100"
-            onClick={() => setOpen(false)}
-          >
-            <Github className="w-4 h-4" /> GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/alexandre-bernard-chaillou"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm text-white hover:text-blue-100"
-            onClick={() => setOpen(false)}
-          >
-            <Linkedin className="w-4 h-4" /> LinkedIn
-          </a>
-          <a
-            href="/documents/CV_EN_ALEXANDRE_BERNARD.pdf"
-            className="inline-flex items-center gap-2 rounded-lg bg-white/20 text-white px-3 py-1.5 text-sm hover:bg-white/30 transition"
-            onClick={() => setOpen(false)}
-          >
-            <Download className="w-4 h-4" /> CV
-          </a>
+            <a
+              href="https://github.com/alexandreb49"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-white hover:text-blue-100"
+              onClick={() => setOpen(false)}
+            >
+              <Github className="w-4 h-4" /> GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/alexandre-bernard-chaillou"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-white hover:text-blue-100"
+              onClick={() => setOpen(false)}
+            >
+              <Linkedin className="w-4 h-4" /> LinkedIn
+            </a>
+            <a
+              href="/documents/CV_EN_ALEXANDRE_BERNARD.pdf"
+              className="inline-flex items-center gap-2 rounded-lg bg-white/20 text-white px-3 py-1.5 text-sm hover:bg-white/30 transition"
+              onClick={() => setOpen(false)}
+            >
+              <Download className="w-4 h-4" /> CV
+            </a>
+          </div>
         </div>
-      </div>
+      )}
     </header>
   )
 }

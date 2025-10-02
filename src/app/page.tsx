@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <main className="min-h-screen w-full text-black bg-white scroll-smooth">
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50 via-white to-indigo-50" />
+        <div className="absolute inset-0  bg-gradient-to-br from-sky-50 via-white to-indigo-50" />
         <div className="relative max-w-6xl mx-auto px-6 pt-2 pb-6 md:pt-10 md:pb-8">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-10 items-center">
             <div className="md:col-span-2 flex justify-center md:justify-start">
@@ -27,7 +27,7 @@ export default function HomePage() {
                   width={320}
                   height={320}
                   priority
-                  className="relative rounded-full object-cover"
+                  className="relative rounded-full object-cover mt-8 md:mt-0"
                 />
               </div>
             </div>
@@ -112,11 +112,9 @@ export default function HomePage() {
       <Professional/>
       <Extracurricular/>
       <Skills/>
-
-
-      <section id="projects" className="bg-slate-50">
+      <section id="projects" className="bg-</section>slate-50">
         <div className="max-w-6xl mx-auto px-6 py-12 md:py-16">
-           <MyProjects /> 
+            <MyProjects />
         </div>
       </section>
     </main>
