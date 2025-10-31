@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, Github, Linkedin, Download } from 'lucide-react'
 import SocialsLink from './links'
+import { NavbarCVButton } from './cvdownload'
 
 function NavLink({
   href,
@@ -40,8 +41,8 @@ function NavLink({
 
 export default function Navbar() {
   const [open, setOpen] = React.useState(false)
-
   return (
+    <>  
     <header className="relative">
       <nav className="w-full h-16 bg-gradient-to-r from-blue-600 to-blue-800 shadow-lg flex items-center justify-between px-8">
         <Link href="/" className="text-lg sm:text-xl font-bold tracking-tight text-white hover:text-blue-100">
@@ -57,12 +58,7 @@ export default function Navbar() {
           <SocialsLink text="Linkedin" link="https://www.linkedin.com/in/alexandre-bernard-chaillou/" imageLink={<Linkedin className='h-4 w-4'/>} type='dark'/>
           <SocialsLink text="Github" link="https://github.com/alexandreb49" imageLink={<Github className='h-4 w-4'/>}  type='dark'/>
 
-          <a
-            href="/documents/CV_EN_ALEXANDRE_BERNARD.pdf"
-            className="inline-flex items-center gap-2 rounded-xl bg-white/20 text-white px-3 py-1.5 text-sm hover:bg-white/30 transition"
-          >
-            <Download className="w-4 h-4" /> CV
-          </a>
+          <NavbarCVButton />
         </div>
 
         {/* Mobile part */}
@@ -107,11 +103,20 @@ export default function Navbar() {
               className="inline-flex items-center gap-2 rounded-lg bg-white/20 text-white px-3 py-1.5 text-sm hover:bg-white/30 transition"
               onClick={() => setOpen(false)}
             >
-              <Download className="w-4 h-4" /> CV
+              <Download className="w-4 h-4" /> CV EN 
             </a>
+                        <a
+              href="/documents/CV_FR_ALEXANDRE_BERNARD.pdf"
+              className="inline-flex items-center gap-2 rounded-lg bg-white/20 text-white px-3 py-1.5 text-sm hover:bg-white/30 transition"
+              onClick={() => setOpen(false)}
+            >
+              <Download className="w-4 h-4" /> CV FR
+            </a>
+            
           </div>
         </div>
       )}
     </header>
+    </>
   )
 }

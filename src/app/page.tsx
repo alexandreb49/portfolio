@@ -8,6 +8,7 @@ import SocialsLink, {ContactLink} from './components/links'
 import Skills from './components/main/skills'
 import Background, { Extracurricular, Professional } from './components/main/background'
 import MyProjects from './projects/page'
+import { CVDownloadMainPage } from './components/cvdownload'
 
 export default function HomePage() {
 
@@ -73,7 +74,7 @@ export default function HomePage() {
       </section>
 
       <section className="bg-gradient-to-r from-blue-700 to-sky-600 text-white">
-        <div className="max-w-6xl mx-auto px-6 py-5 md:py-6">
+        <div className="w-[80%] mx-auto px-6 py-5 md:py-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center">
             <div className="md:col-span-2">
               <h2 className="text-xl md:text-2xl font-semibold">
@@ -83,25 +84,14 @@ export default function HomePage() {
                 Aerospace engineering 
               </p>
             </div>
-            <div className="flex flex-wrap gap-3 md:justify-end">
+            <div className=" w-full grid grid-cols-3 gap-3 ">
               <a
                 href="mailto:alexandre.bernard@ensam.eu"
                 className="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-white text-blue-800 hover:bg-blue-50 transition"
               >
                 <Mail className="w-4 h-4" /> Contact me
               </a>
-              <a
-                href="/documents/recommendation/recommendation_Alexandre_Bernard.pdf"
-                className="inline-flex items-center gap-2 px-5 py-2 rounded-xl border border-white/70 hover:bg-white/10 transition"
-              >
-                Recommendations <ArrowRight className="w-4 h-4" />
-              </a>
-                <a
-                href="/documents/cv/CV_EN_ALEXANDRE_BERNARD.pdf"
-                className="inline-flex items-center gap-2 px-5 py-2 rounded-xl border border-white/70 hover:bg-white/10 transition"
-              >
-                Download CV <ArrowRight className="w-4 h-4" />
-              </a>
+              <CVDownloadMainPage/>
               
 
             </div>
