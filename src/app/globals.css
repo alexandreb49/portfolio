@@ -193,16 +193,18 @@ section {
 }
 .nav .links {
   display: flex;
-  gap: 30px;
+  gap: 24px;
   align-items: center;
+  min-width: 0;
 }
 .nav .links a {
   font-family: var(--font-mono);
-  font-size: 18px;
+  font-size: 13px;
   letter-spacing: 0.04em;
   color: var(--fg-dim);
   transition: color 0.2s;
   position: relative;
+  white-space: nowrap;
 }
 .nav .links a:hover {
   color: var(--fg);
@@ -226,7 +228,8 @@ section {
   border-radius: 2px;
   color: var(--fg);
   font-family: var(--font-mono);
-  font-size: 18px;
+  font-size: 13px;
+  white-space: nowrap;
   transition: all 0.2s;
 }
 .nav .cta:hover {
@@ -971,108 +974,6 @@ section {
 }
 
 /* ===================== EDUCATION ===================== */
-.edu-split {
-  display: grid;
-  grid-template-columns: 1fr 380px;
-  gap: clamp(32px, 5vw, 72px);
-  align-items: stretch;
-}
-@media (max-width: 1024px) {
-  .edu-split {
-    grid-template-columns: 1fr;
-  }
-  .edu-rocket {
-    display: none;
-  }
-}
-.edu-rocket {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.edu-rocket-stage {
-  position: relative;
-  flex: 1;
-  min-height: 400px;
-  border: 1px solid var(--line-2);
-  border-radius: 4px;
-  overflow: hidden;
-  background:
-    radial-gradient(
-      120% 80% at 50% 0%,
-      color-mix(in oklab, var(--accent) 13%, transparent),
-      transparent 58%
-    ),
-    var(--bg-1);
-}
-.edu-rocket-stage::before,
-.edu-rocket-stage::after {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  z-index: 3;
-  pointer-events: none;
-  border: 1px solid var(--accent);
-}
-.edu-rocket-stage::before {
-  top: 12px;
-  left: 12px;
-  border-right: none;
-  border-bottom: none;
-}
-.edu-rocket-stage::after {
-  bottom: 12px;
-  right: 12px;
-  border-left: none;
-  border-top: none;
-}
-.edu-rocket-hud {
-  position: absolute;
-  z-index: 3;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--fg-faint);
-  line-height: 1.7;
-  pointer-events: none;
-}
-.edu-rocket-hud .k {
-  color: var(--accent);
-}
-.edu-rocket-hud.tl {
-  top: 18px;
-  left: 26px;
-}
-.edu-rocket-hud.br {
-  bottom: 18px;
-  right: 26px;
-  text-align: right;
-}
-.edu-goal {
-  margin-top: 20px;
-  padding: 18px 20px;
-  border: 1px solid var(--line-2);
-  border-left: 3px solid var(--accent);
-  background: var(--bg-1);
-}
-.edu-goal-label {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 8px;
-}
-.edu-goal-text {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.65;
-  color: var(--fg-dim);
-  text-wrap: pretty;
-}
 
 .edu-list {
   display: flex;
