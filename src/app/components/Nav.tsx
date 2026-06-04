@@ -24,16 +24,7 @@ export default function Nav() {
   return (
     <>
       <nav className={`nav${scrolled ? " scrolled" : ""}`}>
-        <button
-          className={`nav-burger${menuOpen ? " open" : ""}`}
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-          onClick={() => setMenuOpen(v => !v)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+        <div />
 
         <div className="links">
           <Link href="/#intro">[ 01 ] Profile</Link>
@@ -47,6 +38,16 @@ export default function Nav() {
           <Link className="cta" href="/#contact">
             Get in touch ↗
           </Link>
+          <button
+            className={`nav-burger${menuOpen ? " open" : ""}`}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen(v => !v)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
         </div>
       </nav>
 

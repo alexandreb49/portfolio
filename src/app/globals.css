@@ -159,6 +159,8 @@ section {
 .nav-right {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
 }
 .nav.scrolled {
   background: rgba(6, 7, 10, 0.82);
