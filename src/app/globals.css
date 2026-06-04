@@ -510,6 +510,9 @@ section {
     grid-template-columns: 1fr;
     gap: 36px;
   }
+  .portrait-frame {
+    max-width: 220px;
+  }
 }
 
 .portrait-frame {
@@ -974,7 +977,7 @@ section {
   gap: clamp(32px, 5vw, 72px);
   align-items: stretch;
 }
-@media (max-width: 980px) {
+@media (max-width: 1024px) {
   .edu-split {
     grid-template-columns: 1fr;
   }
