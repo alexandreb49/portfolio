@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const languages = [
-  { code: "FR", name: "French",  level: "Native",     highlight: "native",  diploma: undefined },
-  { code: "EN", name: "English", level: "Proficient", highlight: "native",  diploma: "TOEIC 985 / 990" },
-  { code: "ES", name: "Spanish", level: "Notions",    highlight: "native",  diploma: undefined },
-  { code: "DE", name: "German",  level: "Notions",    highlight: "native",  diploma: undefined },
+  { code: "FR", name: "French",  level: "Native",     highlight: "native", diploma: undefined },
+  { code: "EN", name: "English", level: "Proficient", highlight: "accent", diploma: "TOEIC 985 / 990" },
+  { code: "ES", name: "Spanish", level: "Notions",    highlight: "dim",    diploma: undefined },
+  { code: "DE", name: "German",  level: "Notions",    highlight: "dim",    diploma: undefined },
 ];
 
 export default function Profile() {
@@ -25,7 +25,7 @@ export default function Profile() {
                 alt="Alexandre Bernard"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center top", filter: "saturate(1.02) contrast(1.02)" }}
-                sizes="320px"
+                sizes="(max-width: 880px) 100vw, 320px"
                 priority
               />
             </div>
