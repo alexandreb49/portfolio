@@ -44,7 +44,7 @@ export default function Skills() {
       <div className="wrap">
         <div className="section-head reveal">
           <h2>Skills &amp; tools</h2>
-          <span className="section-index">[ 04 / CAPABILITY ]</span>
+          <span className="section-index">[ 05 / CAPABILITY ]</span>
         </div>
 
         <div className="clusters reveal">

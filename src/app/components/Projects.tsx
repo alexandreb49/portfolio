@@ -16,7 +16,7 @@ export default function Projects() {
       <div className="wrap">
         <div className="section-head reveal">
           <h2>Recent projects</h2>
-          <span className="section-index">[ 02 / SELECTED WORK ]</span>
+          <span className="section-index">[ 04 / SELECTED WORK ]</span>
         </div>
 
         <div className="projects-list">

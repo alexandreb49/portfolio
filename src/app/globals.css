@@ -519,6 +519,7 @@ section {
   }
   .portrait-frame {
     max-width: 220px;
+    margin-inline: auto;
   }
 }
 
